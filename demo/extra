@@ -1,0 +1,66 @@
+
+#Rest Auth TOKEN login
+# @name token
+POST http://127.0.0.1:8000/rest-auth/login/ HTTP/1.1
+content-type: application/json
+
+{
+    "username": "robertanchondo",
+    "password": "Ukraine3030--aa"
+}
+
+
+#Post to Create a New User on the Website
+POST http://127.0.0.1:8000/rest-auth/registration/ HTTP/1.1
+content-type: application/json
+
+{
+    "email": "robertanchondo@gmail.com",
+    "password1": "Ukraine3030--aa",
+    "password2": "Ukraine3030--aa"
+}
+
+ "password": "Ukraine3030--aa"
+}
+
+
+#Test Authentication Required View 
+GET http://127.0.0.1:8000/json/ HTTP/1.1
+
+content-type: application/json
+Authorization: "token": "e853c59b57449e26bdd68ed9b4409220965c5983"
+
+
+
+
+
+#Rest Framework obtain token
+# @name token
+POST http://127.0.0.1:8000/api-token-auth/ HTTP/1.1
+content-type: application/json
+
+{
+    "username": "robertanchondo",
+    "password": "Ukraine3030--aa"
+}
+
+
+#JWT 
+POST http://127.0.0.1:8000/api/token/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "robertanchondo",
+    "password": "Ukraine3030--aa"
+}
+
+
+
+
+#JWT Refresh
+POST http://127.0.0.1:8000/api/token/refresh/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "refresh": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTU5ODEyMTIwMSwianRpIjoiMmM3YWE5MmRiOTNkNDUwZmEzMGE1ZDY3Y2Q1YjFjM2UiLCJ1c2VyX2lkIjoyfQ.3R7uMnNcxOe9WJSuIPQ_gDJG-t1fbQ0xLO8cJsDVgJU"
+}

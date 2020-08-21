@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+
+#JWT Access to a protected view
+GET http://127.0.0.1:8000/json/ HTTP/1.1
+Content-Type: application/json
+
+Authorization: Bearer  "access": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTk4MDM2ODk2LCJqdGkiOiJmZTA2NDkxMWQ0ZjQ0YWI3ODg3ODlhZmMxMzlmMWY1NSIsInVzZXJfaWQiOjJ9.Y40Ggj7Ds_VJ7y2GZGi-INWgLjVymco39I_YDrTA-Go"
+}
+
+
+
+
+
+
+
